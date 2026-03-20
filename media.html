@@ -1,50 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Media Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="top">
-        <h1>Media Gallery</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Media Production Company</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <!-- <a href="media.html">Media</a> -->
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section>
         <h2>Video Showcase</h2>
-        
+
         <!-- First video - missing controls and fallback -->
         <video src="media/sample1.mp4" width="640" height="360"></video>
-        
+
         <!-- Second video missing entirely -->
-    </div>
-    
-    <div>
+      </section>
+
+      <section>
         <h2>Audio Sample</h2>
         <!-- Audio element missing completely -->
         <p>Listen to our audio production quality.</p>
-    </div>
-    
-    <div>
+      </section>
+
+      <section>
         <h2>Location</h2>
         <!-- iframe missing completely -->
         <p>Visit our studio at 123 Media Street</p>
-    </div>
-    
-    <div>
+      </section>
+
+      <section>
         <h2>Client Testimonials</h2>
-        <img src="images/client1.jpg">
-        <img src="images/client2.jpg">
+        <img src="images/client1.jpg" />
+        <img src="images/client2.jpg" />
         <!-- Missing figure/figcaption semantic markup -->
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
-</body>
+      </section>
+    </main>
+    <footer>
+      <p>Email: contact@mediaproduction.com</p>
+      <p>Phone: 555-0123</p>
+    </footer>
+  </body>
 </html>
