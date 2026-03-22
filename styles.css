@@ -1,19 +1,23 @@
 /* Basic styles with multiple errors and missing features */
 
 body {
+    background-color: #0f172a ;
     font-family: Arial;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-.top {
-    background-color: #1a1a1a;
+.top  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #94a3b8  ;
     color: white;
     padding: 20px;
 }
-
-.top h1 {
+ 
+.top > h1 {
     margin: 0;
 }
 
@@ -26,24 +30,64 @@ body {
     color: white;
     margin-right: 15px;
     text-decoration: none;
+    transition:  all 0.3s ease;
+}
+.nav a:hover {
+    text-decoration: underline;
+    color: #0f172a;
+}
+
+.nav a:active {
+    opacity: 0.7;
+}
+
+.nav a:visited {
+    color: #e2e8f0;
+}
+button {
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Smooth animation */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+button:focus {
+    outline: 2px solid black;
 }
 
 /* Missing: pseudo-classes for hover effects */
 /* Missing: combination selectors */
 /* Missing: advanced selector types (attribute, child, etc) */
-
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
 .hero {
     padding: 60px 20px;
-    background-color: lightgray;
-    /* Poor colour contrast */
-    color: #ddd;
+    background-color: #e2e8f0;
+    color: #0f172a; /* FIX contrast */
+    border-radius: 10px;
 }
 
 /* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
 /* Missing: CSS Grid layout (requirement: 1+ grid layout) */
 
 .content {
-    padding: 40px 20px;
+     padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 /* Missing: text effects (shadows, gradients) */
@@ -71,7 +115,7 @@ form button {
     border: none;
 }
 
-.bottom {
+footer {
     background-color: #333;
     color: white;
     padding: 20px;
