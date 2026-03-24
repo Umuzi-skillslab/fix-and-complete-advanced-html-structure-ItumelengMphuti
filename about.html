@@ -5,17 +5,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="top">
       <h1>Media Production Company</h1>
-      <nav>
+      <nav class="nav">
         <a href="index.html">Home</a>
-        <!-- <a href="about.html">About</a> -->
         <a href="media.html">Media</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="page about-layout">
+      <section class="card">
         <h2>Our Team</h2>
         <p>
           We are a team of experienced media professionals dedicated to creating
@@ -23,23 +22,26 @@
         </p>
       </section>
 
-      <section>
+      <section class="card services">
         <h2>Services</h2>
         <!-- Flexbox layout should be here but using basic divs -->
-        <div>
+        <div class="service">
           <h3>Video Production</h3>
           <p>
             Professional video creation for corporate and creative projects.
           </p>
         </div>
-        <div>
+        <div class="service">
           <h3>Audio Recording</h3>
           <p>Studio-quality audio production and editing services.</p>
         </div>
-        <!-- Missing third service -->
+        <div class="service">
+          <h3>Multimedia Solutions</h3>
+          <p>Integrated media solutions for businesses of all sizes.</p>
+        </div>
       </section>
 
-      <section>
+      <section class="card portfolio">
         <h2>Portfolio</h2>
         <!-- Grid gallery missing - just basic layout -->
         <img src="images/work1.jpg" />
@@ -47,9 +49,19 @@
         <img src="images/work3.jpg" />
       </section>
     </main>
-    <footer>
-      <p>Email: contact@mediaproduction.com</p>
-      <p>Phone: 555-0123</p>
-    </footer>
+       <footer class="footer">
+  <div>
+    <h3>Contact</h3>
+    <p>Email: contact@mediaproduction.com</p>
+    <p>Phone: 555-0123</p>
+  </div>
+  
+  <div>
+    <h3>Follow Us</h3>
+    <p><a href="#">Instagram</a></p>
+    <p><a href="#">Twitter</a></p>
+    <p><a href="#">YouTube</a></p>
+  </div>
+</footer>
   </body>
 </html>

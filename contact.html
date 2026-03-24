@@ -1,40 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="top">
-        <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <!-- <a href="contact.html">Contact</a> -->
-        </div>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
-        </form>
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Media Production Company</h1>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <!-- <a href="contact.html">Contact</a> -->
+      </nav>
+    </header>
+
+    <main class="page contact-layout">
+      <h2>Get In Touch</h2>
+
+      <!-- Form with multiple errors -->
+      <form class="contact-form">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" />
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Service Type</legend>
+
+          <label> <input type="radio" name="service" /> Video </label>
+
+          <label> <input type="radio" name="service" /> Audio </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extras</legend>
+
+          <label> <input type="checkbox" /> Editing </label>
+
+          <label> <input type="checkbox" /> Scriptwriting </label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button class="btn">Send</button>
+      </form>
+    </main>
+
+       <footer class="footer">
+  <div>
+    <h3>Contact</h3>
+    <p>Email: contact@mediaproduction.com</p>
+    <p>Phone: 555-0123</p>
+  </div>
+  
+  <div>
+    <h3>Follow Us</h3>
+    <p><a href="#">Instagram</a></p>
+    <p><a href="#">Twitter</a></p>
+    <p><a href="#">YouTube</a></p>
+  </div>
+</footer>
+  </body>
 </html>

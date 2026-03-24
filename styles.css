@@ -1,129 +1,364 @@
-/* Basic styles with multiple errors and missing features */
+/* =========================
+   GLOBAL STYLES
+========================= */
 
-body {
-    background-color: #0f172a ;
-    font-family: Arial;
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #0c161b;
+    font-family: Arial, sans-serif;
     color: #333;
 }
 
-.top  {
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #94a3b8  ;
+    background-color: #176a8a;
     color: white;
     padding: 20px;
 }
- 
+
 .top > h1 {
     margin: 0;
 }
 
-/* Navigation - not using flexbox, poor styling */
-.nav {
-    margin-top: 10px;
-}
-
-.nav a {
+nav a {
+    font-size: 18px;
     color: white;
     margin-right: 15px;
     text-decoration: none;
-    transition:  all 0.3s ease;
-}
-.nav a:hover {
-    text-decoration: underline;
-    color: #0f172a;
+    transition: all 0.3s ease;
 }
 
-.nav a:active {
-    opacity: 0.7;
+nav a:hover {
+    color: #14b1ee;
 }
 
-.nav a:visited {
-    color: #e2e8f0;
+nav a:focus {
+    outline: 2px solid #14b1ee;
 }
+
+/* Highlight current page */
+a[href="contact.html"] {
+    font-weight: bold;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
 button {
     padding: 12px 24px;
-    background-color: #2563eb;
+    background-color: #14b1ee;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-
-    /* Smooth animation */
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: #0e80c1;
+    transform: scale(1.05);
 }
 
 button:focus {
     outline: 2px solid black;
 }
 
-/* Missing: pseudo-classes for hover effects */
-/* Missing: combination selectors */
-/* Missing: advanced selector types (attribute, child, etc) */
+/* =========================
+   SECTION CARD STYLE
+========================= */
+
+section {
+    background-color: #f8fafc;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+section h2 {
+    color: #0f172a;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #14b1ee;
+    margin-top: 8px;
+}
+
+/* Paragraph tweak */
+h2 + p {
+    opacity: 0.8;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
 .home-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+
+/* Hero */
 .hero {
-    padding: 60px 20px;
-    background-color: #e2e8f0;
-    color: #0f172a; /* FIX contrast */
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
-/* Missing: CSS Grid layout (requirement: 1+ grid layout) */
+.hero h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
 
+/* Gradient text */
+.hero h2 span.highlight {
+    background: linear-gradient(90deg, #14b1ee, #176a8a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 span.italic {
+    font-style: italic;
+    -webkit-text-stroke: 1px #176a8a;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+
+/* Content */
 .content {
-     padding: 40px 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-/* Missing: text effects (shadows, gradients) */
-/* Missing: transforms */
-/* Missing: transitions */
-/* Missing: keyframe animations */
-
-img {
-    max-width: 100%;
-}
-
-/* Video and audio styling missing */
-
-/* Form styling incomplete */
-form input {
-    display: block;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
 }
 
-/* Missing: responsive design with media queries */
-/* Missing: advanced layout techniques */
-/* Code quality issues: poor naming, no comments, inconsistent spacing */
-/* Only using 3 selector types (element, class) - needs 5+ */
-/* No pseudo-classes used - needs 5+ */
+/* Services list with icons */
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.services-list li:hover {
+    transform: translateX(5px);
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Services cards */
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.services-cards div {
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.services-cards div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.portfolio div {
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio div:hover {
+    transform: scale(1.05);
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* =========================
+   MEDIA PAGE
+========================= */
+
+.media-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.media-layout section {
+    animation: fadeUp 0.6s ease;
+}
+
+/* Video & audio */
+video, audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Form */
+form {
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Form states */
+input:focus,
+textarea:focus {
+    border-color: #14b1ee;
+    outline: none;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #97cce1;
+    color: white;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+    .home-layout,
+    .about-layout,
+    .media-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
