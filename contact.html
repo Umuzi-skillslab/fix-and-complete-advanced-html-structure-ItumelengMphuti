@@ -1,40 +1,61 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Contact | Media Production Company</title>
+
+    <meta
+      name="description"
+      content="Contact our media production company for professional video, audio, and multimedia services."
+    />
+    <meta
+      name="keywords"
+      content="contact media company, video production contact, audio services"
+    />
+    <meta name="author" content="Media Production Company" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="top">
       <h1><a href="index.html">Media Production Company</a></h1>
-
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="media.html">Media</a>
-        <!-- <a href="contact.html">Contact</a> -->
       </nav>
     </header>
 
     <main class="page contact-layout">
-      <h2>Get In Touch</h2>
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <div class="social-icons">
+          <a href="#" class="icon facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="icon linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
 
-      <div class="social-icons">
-    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-
-      <!-- Form with multiple errors -->
       <form class="contact-form">
         <fieldset>
           <legend>Contact Information</legend>
 
           <label for="name">Name:</label>
-          <input type="text" id="name" required />
+          <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
           <input type="email" id="email" required />
@@ -49,17 +70,13 @@
         <fieldset>
           <legend>Service Type</legend>
 
-          <label> <input type="radio" name="service" /> Video </label>
+          <label>
+            <input type="radio" name="service" value="video" /> Video
+          </label>
 
-          <label> <input type="radio" name="service" /> Audio </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Extras</legend>
-
-          <label> <input type="checkbox" /> Editing </label>
-
-          <label> <input type="checkbox" /> Scriptwriting </label>
+          <label>
+            <input type="radio" name="service" value="audio" /> Audio
+          </label>
         </fieldset>
 
         <label for="message">Message:</label>

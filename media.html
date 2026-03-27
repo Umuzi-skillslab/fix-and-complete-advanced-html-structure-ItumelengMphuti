@@ -1,8 +1,22 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Media Gallery</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Media Gallery | Media Production Company</title>
+
+    <meta
+      name="description"
+      content="Explore our portfolio of video productions, audio recordings, and client testimonials."
+    />
+    <meta
+      name="keywords"
+      content="media portfolio, video showcase, audio samples, production work"
+    />
+    <meta name="author" content="Media Production Company" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="top">
@@ -10,63 +24,61 @@
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <!-- <a href="media.html">Media</a> -->
         <a href="contact.html">Contact</a>
       </nav>
     </header>
     <main class="page media-layout">
+      <section class="card video">
+        <h2>Video Showcase</h2>
 
-  <section class="card video">
-    <h2>Video Showcase</h2>
+        <video controls>
+          <source src="media/video1.mp4" type="video/mp4" />
+        </video>
 
-    <video controls>
-      <source src="media/video1.mp4" type="video/mp4">
-    </video>
+        <video controls>
+          <source src="media/video2.mp4" type="video/mp4" />
+        </video>
+      </section>
 
-    <video controls>
-      <source src="media/video2.mp4" type="video/mp4">
-    </video>
-  </section> 
- 
+      <section class="card testimonials">
+        <h2>Client Testimonials</h2>
 
-<section class="card testimonials">
-    <h2>Client Testimonials</h2>
+        <figure>
+          <img src="images/company1.jpg" alt="Client 1" />
+          <figcaption>
+            "Very professional team, product delivered on time" - Apex
+            Technologies
+          </figcaption>
+        </figure>
 
-    <figure>
-      <img src="media/company1.jpg" alt="Client 1">
-      <figcaption>"Very professional team, product delivered on time" - Apex Technologies</figcaption>
-    </figure>
+        <figure>
+          <img src="images/company2.jpg" alt="Client 2" />
+          <figcaption>
+            "Exceptional quality and attention to detail" - Visionary Marketing
+            group
+          </figcaption>
+        </figure>
+      </section>
 
-    <figure>
-      <img src="media/company2.jpg" alt="Client 2">
-      <figcaption>"Exceptional quality and attention to detail" - Visionary Marketing group</figcaption>
-    </figure>
+      <section class="card audio">
+        <h2>Audio Sample</h2>
 
-  </section>
+        <audio controls>
+          <source src="media/audio.mp3" type="audio/mpeg" />
+        </audio>
+      </section>
 
+      <section class="card location">
+        <h2>Location</h2>
 
-  <section class="card audio">
-    <h2>Audio Sample</h2>
-
-    <audio controls>
-      <source src="media/audio.mp3" type="audio/mpeg">
-    </audio>
-
-  </section>
-
-  <section class="card location">
-    <h2>Location</h2>
-
-    <iframe 
-      src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      width="100%" height="200">
-    </iframe>
-
-  </section>
-
-
-</main>
-  <footer class="footer">
+        <iframe
+          src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          height="200"
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer class="footer">
       <div class="footer-left">
         <h3><a href="index.html">Media Production Co.</a></h3>
       </div>
