@@ -1,48 +1,145 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/uFImwIHI)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=23177698&assignment_repo_type=AssignmentRepo)
+# Multimedia Portfolio Website
 
-# Media Production Website Starter Code
+This is a responsive website designed to showcase muiltimedia services such as video productio and audio recording.
+The site includes multiple pages and uses CSS Grid and Flexbox for layout.
 
-This is the starter codebase for your media production website project. The code is approximately 70% complete but contains errors, omissions, and areas that need significant improvement.
+---
 
-## What's Included
+## Issues Found
+The starter code contained several issues:
+- Duplicate CSS selectors causing style conflicts
+- Navigation bar not responsive on smaller screens
+- Grid layouts breaking due to fixed column structures
+- Missing responsive adjustments for portfolio and footer
+- Form validation styles not visible due to missing borders
+- Overly rigid selectors (e.g. `nth-of-type`) causing layout inconsistencies
+- Lack of accessibility features such as focus states
 
-- `index.html` - Home page (incomplete, semantic issues)
-- `about.html` - About/Services page (incomplete, missing flexbox/grid layouts)
-- `media.html` - Media gallery page (incomplete, missing media elements)
-- `contact.html` - Contact page (incomplete form with validation issues)
-- `css/styles.css` - Stylesheet (incomplete, missing advanced features)
-- `images/` folder - Placeholder folder for your images
-- `media/` folder - Placeholder folder for video/audio files
+---
 
-## Your Task
+## Features
 
-Review the provided code carefully and:
+- Responsive layout
+- Nvigation bar with active links
+- Portfolio gallery using CSS Grid
+- Contact form with validation
+- Media section with video, audio, and embedded content
+- Animated UI elements such as hover effects and transitions
 
-1. Identify and fix all HTML and CSS errors
-2. Complete all missing advanced requirements
-3. Add required media elements (video, audio, iframe)
-4. Implement flexbox and CSS Grid layouts
-5. Add CSS effects, transforms, transitions, and animations
-6. Expand selector usage and add pseudo-classes
-7. Improve code quality and organisation
-8. Test across multiple browsers and validate all code
+---
 
-## Getting Started
+## Technologies Used
 
-1. Review all HTML and CSS files thoroughly
-2. Run HTML through W3C Validator to identify errors
-3. Run CSS through W3C CSS Validator
-4. Identify missing advanced features (flexbox, grid, animations, etc.)
-5. Test in multiple browsers
-6. Fix all issues and complete missing requirements
+- HTLM5
+- CSS3 (Flexbox and Grid)
+- Basic form validation using HTML and CSS
 
-## Notes
+---
 
-- You will need to add your own video and audio files to the `media/` folder
-- You will need to add images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Advanced features like flexbox, grid, animations are missing or incomplete
-- Refer to the project requirements document for all specifications
+## Project Structure
 
-Good luck!
+/fix-and-complete-advanced-html-structure-ItumelengMphuti
+│── index.html
+│── about.html
+│── media.html
+│── contact.html
+│── styles.css
+│── /media
+├── /images
+
+---
+
+## Design Desicions
+
+- CSS Grid was used for page layouts to create structured sections.
+- Flexbox was used for smaller components like the navigation and cards.
+- Reusable classes like `.card` and `.portfolio` were used to maintain consistency.
+- Media queries to ensure responsiveness on smaller screens.
+
+---
+
+## Cross-browser Compatibility
+- Used `-webkit-` properties for gradient text support
+- Added fallback colors for unsupported browsers
+- Tested layout in multiple browsers (Chrome, Edge)
+
+---
+
+## Challenges
+
+- Duplicate CSS selectors caused style conflicts.
+- Input validation styles were not visible due to missing borders.
+- Grid layout placement issues using `nth-of-type`.
+
+---
+
+## Solutions
+
+- Merged duplicate CSS rules.
+- Added border styling for form inputs.
+- Adjusted layout structure and selectors.
+
+---
+
+## How to Run
+
+1. Download or clone the repository
+2. Open `index.html` in a browser
+3. Navigate through pages using the navbar
+
+---
+
+## Future Improvements
+
+- Add JavaScript for form submission
+- Improve accessibility
+- Add backend integration for contact form
+- Optimize images and performance
+
+---
+
+## Screenshots
+
+### Pages on desktop
+
+Home Page
+![Homepage Screenshot](images/Home-page.png)
+
+About Page
+![Aboutpage Screenshot](images/About.png)
+
+Media Page 
+![Media page Screenshot](images/media1.png)
+![Media page Screenshot](images/media2.png)
+
+Contact Page
+![Contact Page Screenshot](images/contact.png)
+
+### Page mobile view
+
+Home Page - Mobile View
+![Home Page Screenshot](images/home-mobile1.png)
+![Home Page Screenshot](images/home-mobile2.png)
+
+Contact Page - Mobile View
+![Contact Page Screenshot](images/contact-mobile1.png)
+![Contact Page Screenshot](images/contact-mobile2.png)
+
+## Form Validation
+![Form Validation](images/form-validation.png)
+
+## Effects
+![Effects](media/effects.mp4)
+
+### Media Elements
+![Media](media/media-elements.mp4)
+
+### Flexbox Layout
+![Flexbox](images/Flexbox.png)
+
+### CSS Grid Layout
+![Grid](images/CSS-grid.png)
+
+### Browser Compatibility
+![Chrome](images/compatibility-chrome.png)
+![Edge](images/compatibility-edge.png)
