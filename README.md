@@ -103,43 +103,43 @@ The starter code contained several issues:
 ### Pages on desktop
 
 Home Page
-![Homepage Screenshot](images/Home-page.png)
+![Homepage Screenshot](screenshots/Home-page.png)
 
 About Page
-![Aboutpage Screenshot](images/About.png)
+![Aboutpage Screenshot](screenshots/About.png)
 
 Media Page 
-![Media page Screenshot](images/media1.png)
-![Media page Screenshot](images/media2.png)
+![Media page Screenshot](screenshots/media1.png)
+![Media page Screenshot](screenshots/media2.png)
 
 Contact Page
-![Contact Page Screenshot](images/contact.png)
+![Contact Page Screenshot](screenshots/contact.png)
 
 ### Page mobile view
 
 Home Page - Mobile View
-![Home Page Screenshot](images/home-mobile1.png)
-![Home Page Screenshot](images/home-mobile2.png)
+![Home Page Screenshot](screenshots/home-mobile1.png)
+![Home Page Screenshot](screenshots/home-mobile2.png)
 
 Contact Page - Mobile View
-![Contact Page Screenshot](images/contact-mobile1.png)
-![Contact Page Screenshot](images/contact-mobile2.png)
+![Contact Page Screenshot](screenshots/contact-mobile1.png)
+![Contact Page Screenshot](screenshots/contact-mobile2.png)
 
 ## Form Validation
-![Form Validation](images/form-validation.png)
+![Form Validation](screenshots/form-validation.png)
 
 ## Effects
-![Effects](media/effects.mp4)
+![Effects](screenshots/effects.mp4)
 
 ### Media Elements
-![Media](media/media-elements.mp4)
+![Media](screenshots/media-elements.mp4)
 
 ### Flexbox Layout
-![Flexbox](images/Flexbox.png)
+![Flexbox](screenshots/Flexbox.png)
 
 ### CSS Grid Layout
-![Grid](images/CSS-grid.png)
+![Grid](screenshots/CSS-grid.png)
 
 ### Browser Compatibility
-![Chrome](images/compatibility-chrome.png)
-![Edge](images/compatibility-edge.png)
+![Chrome](screenshots/compatibility-chrome.png)
+![Edge](screenshots/compatibility-edge.png)
