@@ -1,40 +1,122 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="top">
-        <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home | Media Production Company</title>
+
+    <meta
+      name="description"
+      content="Professional media production services including video production, audio recording, and multimedia solutions."
+    />
+    <meta
+      name="keywords"
+      content="media production, video production, audio recording, multimedia"
+    />
+    <meta name="author" content="Media Production Company" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-96x96.png"
+      sizes="96x96"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top">
+      <h1><a href="index.html">Media Production Company</a></h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page contact-layout">
+      <div class="contact-info">
         <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
-        </form>
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
-</body>
+        <div class="social-icons">
+          <a href="#" class="icon facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="icon linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Service Type</legend>
+
+          <label>
+            <input type="radio" name="service" value="video" /> Video
+          </label>
+
+          <label>
+            <input type="radio" name="service" value="audio" /> Audio
+          </label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <label class="checkbox-label">
+          <input type="checkbox" name="subscribe" />
+          Subscribe to updates
+        </label>
+
+        <button class="btn">Send</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h3><a href="index.html">Media Production Co.</a></h3>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Media Production. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
