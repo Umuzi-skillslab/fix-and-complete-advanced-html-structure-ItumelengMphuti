@@ -4,81 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Media Gallery | Media Production Company</title>
+    <title>Media | Media Production Company</title>
 
     <meta
       name="description"
-      content="Explore our portfolio of video productions, audio recordings, and client testimonials."
+      content="Professional media production services including video production, audio recording, and multimedia solutions."
     />
     <meta
       name="keywords"
-      content="media portfolio, video showcase, audio samples, production work"
+      content="media production, video production, audio recording, multimedia"
     />
     <meta name="author" content="Media Production Company" />
-    <link rel="icon" href="images/favicon.ico" />
+
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-96x96.png"
+      sizes="96x96"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="top">
       <h1><a href="index.html">Media Production Company</a></h1>
-      <nav class="nav">
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="media.html" aria-current="page">Media</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <main class="page media-layout">
+
+    <main class="media-layout">
       <section class="card video">
         <h2>Video Showcase</h2>
-
-        <video controls>
-          <source src="media/video1.mp4" type="video/mp4" />
-        </video>
-
-        <video controls>
-          <source src="media/video2.mp4" type="video/mp4" />
-        </video>
+        <figure>
+          <video controls poster="images/video1-poster.png">
+            <source src="media/video1.webm" type="video/webm" />
+            <source src="media/video1.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              src="media/video1.vtt"
+              srclang="en"
+              label="English"
+              default
+            />
+            Your browser does not support the video element.
+          </video>
+          <figcaption>Corporate brand video production</figcaption>
+        </figure>
+        <figure>
+          <video controls poster="images/video2-poster.png">
+            <source src="media/video2.webm" type="video/webm" />
+            <source src="media/video2.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              src="media/video2.vtt"
+              srclang="en"
+              label="English"
+              default
+            />
+            Your browser does not support the video element.
+          </video>
+          <figcaption>Corporate brand video production</figcaption>
+        </figure>
       </section>
 
       <section class="card testimonials">
         <h2>Client Testimonials</h2>
-
         <figure>
-          <img src="images/company1.jpg" alt="Client 1" />
+          <img src="images/company1.jpg" alt="Apex Technologies company logo" />
           <figcaption>
-            "Very professional team, product delivered on time" - Apex
+            "Very professional team, product delivered on time" — Apex
             Technologies
           </figcaption>
         </figure>
-
         <figure>
-          <img src="images/company2.jpg" alt="Client 2" />
+          <img
+            src="images/company2.jpg"
+            alt="Visionary Marketing Group company logo"
+          />
           <figcaption>
-            "Exceptional quality and attention to detail" - Visionary Marketing
-            group
+            "Exceptional quality and attention to detail" — Visionary Marketing
+            Group
           </figcaption>
         </figure>
       </section>
 
       <section class="card audio">
         <h2>Audio Sample</h2>
-
-        <audio controls>
+        <audio controls aria-label="Audio production sample">
+          <source src="media/audio.ogg" type="audio/ogg" />
           <source src="media/audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
         </audio>
       </section>
 
       <section class="card location">
         <h2>Location</h2>
-
         <iframe
+          title="Our office location in Johannesburg on Google Maps"
           src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"
           height="200"
+          loading="lazy"
         >
         </iframe>
+
+        <noscript>
+          <p>
+            JavaScript is disabled. You can view our location here:
+            <a
+              href="https://maps.google.com/?q=Johannesburg"
+              target="_blank"
+              rel="noopener"
+            >
+              Open map in Google Maps
+            </a>
+          </p>
+        </noscript>
       </section>
     </main>
-    <footer class="footer">
+
+    <footer>
       <div class="footer-left">
         <h3><a href="index.html">Media Production Co.</a></h3>
       </div>

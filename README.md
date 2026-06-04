@@ -1,36 +1,86 @@
 # Multimedia Portfolio Website
 
-This is a responsive website designed to showcase muiltimedia services such as video productio and audio recording.
+This is a responsive website designed to showcase multimedia services such as video production and audio recording.
 The site includes multiple pages and uses CSS Grid and Flexbox for layout.
 
 ---
 
-## Issues Found
-The starter code contained several issues:
-- Duplicate CSS selectors causing style conflicts
-- Navigation bar not responsive on smaller screens
-- Grid layouts breaking due to fixed column structures
-- Missing responsive adjustments for portfolio and footer
-- Form validation styles not visible due to missing borders
-- Overly rigid selectors (e.g. `nth-of-type`) causing layout inconsistencies
-- Lack of accessibility features such as focus states
+## Issues Found (Debugging Log)
+
+### Issue 1: Duplicate CSS Selectors
+
+- Problem: Multiple conflicting `.top` styles in stylesheet
+- Impact: Overriding layout styles unexpectedly
+- Fix: Merged duplicate selectors into single definition
+
+---
+
+### Issue 2: Grid Layout Breaks on Mobile
+
+- Problem: Fixed `grid-template-columns` caused overflow
+- Impact: Horizontal scrolling on mobile devices
+- Fix: Added media queries with `1fr` layout fallback
+
+---
+
+### Issue 3: Form Validation Not Visible
+
+- Problem: Missing border styles on input fields
+- Impact: Users could not see validation feedback
+- Fix: Added `:valid` and `:invalid` styles
+
+---
+
+### Issue 4: Accessibility Gaps
+
+- Problem: Missing focus states on interactive elements
+- Impact: Keyboard navigation unclear
+- Fix: Added `:focus` styles to buttons and links
 
 ---
 
 ## Features
 
-- Responsive layout
-- Nvigation bar with active links
-- Portfolio gallery using CSS Grid
-- Contact form with validation
-- Media section with video, audio, and embedded content
-- Animated UI elements such as hover effects and transitions
+- Responsive layout using CSS Grid and Flexbox
+- Navigation bar with active page indicator (`aria-current="page"`)
+- Portfolio gallery using CSS Grid with hover effects
+- Contact form with validation and checkbox subscription option
+- Video showcase with multiple sources (MP4/WebM), poster images, and caption tracks (.vtt)
+- Audio player with multiple sources (MP3/OGG) and fallback text
+- Client testimonials with figure and figcaption elements (6+ images total)
+- Embedded Google Maps iframe with lazy loading
+- Animated UI elements including hover effects and transitions
+- Favicon support across browsers and devices (SVG, PNG, ICO, Apple touch icon)
+- `prefers-reduced-motion` media query for accessibility
+
+---
+
+## Coding Conventions
+
+- BEM-style naming used for reusable components (e.g. `.portfolio-grid`, `.contact-form`)
+- Semantic HTML used (header, main, section, article, footer)
+- Mobile-first responsive design using media queries
+- CSS structured by page sections (Home, About, Media, Contact)
+- Consistent indentation (2 spaces)
+- No inline styles used
+- Reusable utility classes used where possible
+
+---
+
+## Accessibility
+
+- Semantic HTML5 landmarks used (header, main, footer)
+- `aria-current="page"` on active navigation links
+- `aria-label` on navigation, buttons, and media elements
+- `iframe` title attribute for screen reader support
+- Video captions via `.vtt` files using `<track>` elements
+- Focus states on interactive elements
 
 ---
 
 ## Technologies Used
 
-- HTLM5
+- HTML5
 - CSS3 (Flexbox and Grid)
 - Basic form validation using HTML and CSS
 
@@ -43,13 +93,23 @@ The starter code contained several issues:
 │── about.html
 │── media.html
 │── contact.html
-│── styles.css
+│── /css
+│ └── styles.css
+│── /images
 │── /media
-├── /images
+│ ├── video1.mp4
+│ ├── video1.webm
+│ ├── video2.mp4
+│ ├── video2.webm
+│ ├── audio.mp3
+│ ├── audio.ogg
+│ ├── video1.vtt
+│ └── video2.vtt
+│── /screenshots
 
 ---
 
-## Design Desicions
+## Design Decisions
 
 - CSS Grid was used for page layouts to create structured sections.
 - Flexbox was used for smaller components like the navigation and cards.
@@ -59,6 +119,7 @@ The starter code contained several issues:
 ---
 
 ## Cross-browser Compatibility
+
 - Used `-webkit-` properties for gradient text support
 - Added fallback colors for unsupported browsers
 - Tested layout in multiple browsers (Chrome, Edge)
@@ -108,7 +169,7 @@ Home Page
 About Page
 ![Aboutpage Screenshot](screenshots/About.png)
 
-Media Page 
+Media Page
 ![Media page Screenshot](screenshots/media1.png)
 ![Media page Screenshot](screenshots/media2.png)
 
@@ -126,20 +187,37 @@ Contact Page - Mobile View
 ![Contact Page Screenshot](screenshots/contact-mobile2.png)
 
 ## Form Validation
+
 ![Form Validation](screenshots/form-validation.png)
 
 ## Effects
-![Effects](screenshots/effects.mp4)
+
+[View Effects Video](screenshots/effects.mp4)
 
 ### Media Elements
-![Media](screenshots/media-elements.mp4)
+
+[View Media Elements Video](screenshots/media-elements.mp4)
 
 ### Flexbox Layout
+
 ![Flexbox](screenshots/Flexbox.png)
 
 ### CSS Grid Layout
+
 ![Grid](screenshots/CSS-grid.png)
 
 ### Browser Compatibility
+
 ![Chrome](screenshots/compatibility-chrome.png)
 ![Edge](screenshots/compatibility-edge.png)
+
+## CSS Validator
+
+![CSS](screenshots/CSSValidator.png)
+
+## HTML Validator
+
+![index](screenshots/indexValidator.png)
+![about](screenshots/aboutValidator.png)
+![media](screenshots/mediaValidator.png)
+![contact](screenshots/contactValidator.png)

@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+
+    <title>About Us| Media Production Company</title>
+
     <meta
       name="description"
-      content="Media Production Company offering video production, audio recording, and multimedia services."
+      content="Professional media production services including video production, audio recording, and multimedia solutions."
     />
     <meta
       name="keywords"
@@ -15,35 +17,60 @@
     <meta name="author" content="Media Production Company" />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="images/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon-96x96.png"
+      sizes="96x96"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="top">
       <h1><a href="index.html">Media Production Company</a></h1>
-      <nav class="nav">
+      <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
         <a href="media.html">Media</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <main class="page about-layout">
+
+    <main class="about-layout">
       <section class="card services">
         <h2>Services</h2>
         <div class="services-cards">
-          <div class="service">
+          <article class="service">
             <h3>Video Production</h3>
             <p>
               Professional video creation for corporate and creative projects.
             </p>
-          </div>
-          <div class="service">
+          </article>
+          <article class="service">
             <h3>Audio Recording</h3>
             <p>Studio-quality audio production and editing services.</p>
-          </div>
-          <div class="service">
+          </article>
+          <article class="service">
             <h3>Multimedia Solutions</h3>
             <p>Integrated media solutions for businesses of all sizes.</p>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -53,30 +80,64 @@
           We are a team of experienced media professionals dedicated to creating
           high-quality content.
         </p>
+        <article class="team-grid">
+          <div class="team-member">
+            <div class="team-avatar">JD</div>
+            <h3>Jane Doe</h3>
+            <p>Lead Video Producer</p>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar">MS</div>
+            <h3>Mark Smith</h3>
+            <p>Audio Engineer</p>
+          </div>
+          <div class="team-member">
+            <div class="team-avatar">AL</div>
+            <h3>Amy Lee</h3>
+            <p>Multimedia Specialist</p>
+          </div>
+        </article>
       </section>
 
       <section class="card portfolio">
         <h2>Portfolio</h2>
-
         <div class="portfolio-grid">
-          <div class="portfolio-item">
+          <figure class="portfolio-item">
             <img src="images/corporate.jpg" alt="Corporate video production" />
-            <p>Corporate brand video</p>
-          </div>
-
-          <div class="portfolio-item">
+            <figcaption>Corporate brand video</figcaption>
+          </figure>
+          <figure class="portfolio-item">
             <img src="images/audio.jpg" alt="Audio recording studio" />
-            <p>Professional studio audio recording</p>
-          </div>
-
-          <div class="portfolio-item">
+            <figcaption>Professional studio audio recording</figcaption>
+          </figure>
+          <figure class="portfolio-item">
             <img src="images/video.jpg" alt="Video editing production" />
-            <p>Creative multimedia content production</p>
-          </div>
+            <figcaption>Creative multimedia content production</figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img src="images/photography.jpg" alt="Video editing production" />
+            <figcaption>Professional photography services</figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <img
+              src="images/drone-shoot.jpg"
+              alt="Drone filming aerial footage"
+            />
+            <figcaption>Aerial drone videography</figcaption>
+          </figure>
+
+          <figure class="portfolio-item">
+            <img
+              src="images/studio-lighting.jpg"
+              alt="Studio lighting setup for filming"
+            />
+            <figcaption>Professional studio lighting setup</figcaption>
+          </figure>
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <footer>
       <div class="footer-left">
         <h3><a href="index.html">Media Production Co.</a></h3>
       </div>
